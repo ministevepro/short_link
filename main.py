@@ -1,4 +1,5 @@
 from pprint import pprint
+from config import phone_number
 import requests
 url= "https://api-ssl.bitly.com/v4/user"
 
@@ -22,6 +23,7 @@ while True:
     print("1) Получить инвормацию о профиле")
     print("2) Сократить ссылку")
     print("3) выход")
+    print("4) донат")
     x=input("виберите функцию: ")
 
     
@@ -45,6 +47,8 @@ while True:
             print("напишите правильную ссылку")
     if x=="3":
         exit()
+    if x=="4":
+        print(phone_number)
 
 
 
